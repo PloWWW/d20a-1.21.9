@@ -1,4 +1,4 @@
-﻿package org.plw;
+package org.plw;
 
 import net.fabricmc.api.ClientModInitializer;
 
