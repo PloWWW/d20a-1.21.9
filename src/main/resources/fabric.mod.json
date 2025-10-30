@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "d20a",
+	"version": "${version}",
+	"name": "D20A",
+	"description": "Special mod for D20 server.",
+	"authors": [
+		"Pl0www!"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/d20a/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.plw.D20A"
+		],
+		"fabric-datagen": [
+			"org.plw.D20ADataGenerator"
+		],
+        "client": [
+            "org.plw.D20AClient"
+        ]
+      },
+	"mixins": [
+		"d20a.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
